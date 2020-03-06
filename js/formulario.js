@@ -30,14 +30,14 @@ function montarTr(paciente) {
 
     table.appendChild(tr);
 }
-
+//monta um nova Td para os valores inseridos pelo usuário
 function montarTd(valor, classe) {
     let td = document.createElement("td");
     td.textContent = valor;
     td.classList.add(classe);
     return td;
 }
-
+//Carrega os dados do novo paciente
 function carregarPaciente(form) {
     let paciente = {
         nome: form.nome.value,

@@ -21,7 +21,7 @@ pacientes.forEach(pacienteTr => {
 
     if (validarPaciente(paciente)) tdIMC.textContent = calcularIMC(paciente);
 });
-
+//calcular IMC do Paciente
 function calcularIMC(paciente) {
     let imc = paciente.peso / paciente.altura ** 2;
     return imc.toFixed(2);
